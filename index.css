@@ -54,6 +54,7 @@ nav ul li a:hover {
     align-items: center;
     padding: 50px 20px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .intro-text {
@@ -92,24 +93,51 @@ nav ul li a:hover {
     color: #1e90ff;
 }
 
+.texto {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: blink-caret .75s step-end infinite;
+    height: 30px;
+    display: inline-block;
+}
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
 .contact-link {
     display: inline-block;
     margin: 10px;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-link img {
     height: 40px;
-    vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 3px;
+    transition: none;
 }
 
-.contact-link:hover {
-    background-color: #ffffff;
-    color: #000000;
+.contact-link:hover img {
+    animation: rotateImg 1.5s ease-in-out infinite;
+}
+
+@keyframes rotateImg {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
 }
 
 .intro-image {
@@ -117,8 +145,8 @@ nav ul li a:hover {
     border-radius: 50%;
     box-shadow: 0 0 15px 35px rgba(255, 255, 255, 0.5);
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     flex-shrink: 0;
 }
 
@@ -141,8 +169,9 @@ nav ul li a:hover {
     }
 
     .intro-image {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+        margin-left: 150px;
     }
 }
 
