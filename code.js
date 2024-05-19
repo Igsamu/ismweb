@@ -30,3 +30,20 @@ function borrar() {
 }
 
 write();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const gamesButton = document.getElementById("showGames");
+    const webButton = document.getElementById("showWeb");
+    const gamesProjects = document.getElementById("gamesProjects");
+    const webProjects = document.getElementById("webProjects");
+
+    gamesButton.addEventListener("click", () => {
+        gamesProjects.style.display = "block";
+        webProjects.style.display = "none";
+    });
+
+    webButton.addEventListener("click", () => {
+        webProjects.style.display = "block";
+        gamesProjects.style.display = "none";
+    });
+});

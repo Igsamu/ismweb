@@ -156,6 +156,29 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+.project-list {
+    display: none; /* Oculta todas las listas de proyectos por defecto */
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
 /* Media Queries for responsiveness */
 @media (min-width: 768px) {
     .intro {
@@ -194,3 +217,5 @@ nav ul li a:hover {
         font-size: 2em;
     }
 }
+
+
