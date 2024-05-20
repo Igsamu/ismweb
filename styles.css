@@ -157,27 +157,113 @@ nav ul li a:hover {
 }
 
 .project-list {
-    display: none; /* Oculta todas las listas de proyectos por defecto */
+    display: none;
+}
+
+#projects h1{
+    font-size: 2em;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .buttons {
     margin-bottom: 20px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 button {
-    margin: 5px;
+    font-size: 1em;
+    margin: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    border: none;
-    background-color: #007BFF;
+    background-color: #121212;
     color: white;
-    border-radius: 5px;
+    border-color: white;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: #000000;
 }
 
+/* Contenedor principal de los proyectos */
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo de cada proyecto */
+.project {
+    display: flex;
+    background-color: #1e1e1e;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px white
+}
+
+.project-image img {
+    width: 200px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h3 {
+    font-size: 2em;
+    margin: 0;
+    color: #fff;
+}
+
+.project-details p {
+    margin: px 0;
+    color: #ccc;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tech-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.repo-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #121212;
+    color: #fff;
+    border-color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.repo-link:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 
 /* Media Queries for responsiveness */
 @media (min-width: 768px) {

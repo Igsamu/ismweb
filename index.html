@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Ignacio Sanz</title>
 </head>
 <body>
@@ -44,25 +44,124 @@
     </section>
 
     <section id="projects">
+        <h1>Proyectos</h1>
         <div class="buttons">
             <button id="showGames">Juegos</button>
             <button id="showWeb">Web</button>
         </div>
         <div id="gamesProjects" class="project-list">
-            <!-- Añade aquí los proyectos de juegos -->
-            <p>Proyecto de Juego 1</p>
-            <p>Proyecto de Juego 2</p>
-            <!-- ... -->
+            <div class="project">
+                <div class="project-details">
+                    <h3>Cube Puzzle</h3>
+                    <p>Pequeño juego de puzzles con tintes cómicos.</p>
+                    <p>Mi primer juego completo</p>
+                    <div class="tech-icons">
+                        <img src="medios/Unity.png" alt="Unity" title="Unity">
+                        <img src="medios/csharp.png" alt="Csharp" title="Csharp">
+                    </div>
+                    <a href="https://ignsm.itch.io/cube-puzzle" target="_blank" class="repo-link">
+                        Pruebalo →</a>
+                </div>
+                <div class="project-image">
+                    <img src="medios/CubePuzzle.jpeg" alt="CubePuzzle">
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-details">
+                    <h3>Music Pow</h3>
+                    <p>Basado en juegos como Beat Saber o Taiko no Tatsujin</p>
+                    <p>Sobrevive a los bloques que te intentan echar al son de la música</p>
+                    <div class="tech-icons">
+                        <img src="medios/Unity.png" alt="Unity" title="Unity">
+                        <img src="medios/csharp.png" alt="Csharp" title="Csharp">
+                    </div>
+                    <a href="https://ignsm.itch.io/music-pow" target="_blank" class="repo-link">
+                        Pruebalo →</a>
+                </div>
+                <div class="project-image">
+                    <img src="medios/MusicPow.jpeg" alt="MusicPow">
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-details">
+                    <h3>Might Sheeker</h3>
+                    <p>Consigue fotos de los monstruos que hay por el mundo.</p>
+                    <p>Creado en unas 30 horas para un trabajo de fin de curso.</p>
+                    <div class="tech-icons">
+                        <img src="medios/Unity.png" alt="Unity" title="Unity">
+                        <img src="medios/csharp.png" alt="Csharp" title="Csharp">
+                    </div>
+                    <a href="https://ignsm.itch.io/might-seeker" target="_blank" class="repo-link">
+                        Pruebalo →</a>
+                </div>
+                <div class="project-image">
+                    <img src="medios/MightSeeker.png" alt="MightSeeker">
+                </div>
+            </div>
         </div>
         <div id="webProjects" class="project-list" style="display: none;">
-            <!-- Añade aquí los proyectos web -->
-            <p>Proyecto Web 1</p>
-            <p>Proyecto Web 2</p>
-            <!-- ... -->
+            <div class="project">
+                <div class="project-details">
+                    <h3>Acortador de Links</h3>
+                    <p>Acortador de links</p>
+                    <p>Usando la api de Bitly</p>
+                    <div class="tech-icons">
+                        <img src="medios/React.png" alt="React" title="React">
+                        <img src="medios/JavaScript.png" alt="JavaScript" title="JavaScript">
+                        <img src="medios/HTML.png" alt="Html" title="Html">
+                        <img src="medios/CSS.png" alt="Css" title="Css">
+                    </div>
+                    <a href="https://shortener-links-mauve.vercel.app/" target="_blank" class="repo-link">
+                        Pruebalo →</a>
+                </div>
+                <div class="project-image">
+                    <img src="medios/Shortener-links.webp" alt="Shortener-links">
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-details">
+                    <h3>Typing Game</h3>
+                    <p>¿Qué tán rápido puedes escribir?</p>
+                    <p>Pruebate a ti mismo</p>
+                    <div class="tech-icons">
+                        <img src="medios/JavaScript.png" alt="JavaScript" title="JavaScript">
+                        <img src="medios/HTML.png" alt="Html" title="Html">
+                        <img src="medios/CSS.png" alt="Css" title="Css">
+                    </div>
+                    <a href="https://shortener-links-mauve.vercel.app/" target="_blank" class="repo-link">
+                        Pruebalo →</a>
+                </div>
+                <div class="project-image">
+                    <img src="medios/typing-game.webp" alt="Shortener-links">
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-details">
+                    <h3>Buscador de Pokémon</h3>
+                    <p>Buscador de pokémon por numero o por nombre.</p>
+                    <p>Usando la afamada pokeapi</p>
+                    <div class="tech-icons">
+                        <img src="medios/React.png" alt="React" title="React">
+                        <img src="medios/JavaScript.png" alt="JavaScript" title="JavaScript">
+                        <img src="medios/HTML.png" alt="Html" title="Html">
+                        <img src="medios/CSS.png" alt="Css" title="Css">
+                    </div>
+                    <a href="https://poke-app-plum.vercel.app/" target="_blank" class="repo-link">
+                        Pruebalo →</a>
+                </div>
+                <div class="project-image">
+                    <img src="medios/Pokeball.png" alt="Pokeball">
+                </div>
+            </div>
+
         </div>
     </section>
     
 
-    <script src="code.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
