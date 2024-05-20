@@ -267,15 +267,18 @@ button:hover {
 
 .skills-section {
     padding: 40px 20px;
-    background-color: #1e1e1e;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    width: 75%; /* Ajusta el ancho al 75% del contenedor principal */
+    width: 55%;
+}
+
+.skills-section h1{
+    font-size: 2em;
+    width: 55%;
+    margin-bottom: 30px;
 }
 
 .skills-container {
-    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -289,7 +292,13 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    justify-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .skill-item {
@@ -312,9 +321,10 @@ button:hover {
 }
 
 .skill-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px white
 }
+
 
 
 /* Media Queries for responsiveness */
