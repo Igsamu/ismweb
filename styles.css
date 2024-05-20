@@ -14,7 +14,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #000000;
 }
 
 .logo {
@@ -324,7 +323,46 @@ button:hover {
     box-shadow: 0px 0px 30px white
 }
 
+.experience-section {
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 55%;
+}
 
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.exp-item {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.exp-item h3 {
+    font-size: 1.3em;
+}
+
+.exp-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px white
+}
+
+.date {
+    color: #26ff00;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 
 
 
@@ -344,6 +382,9 @@ button:hover {
         width: 300px;
         height: 300px;
         margin-left: 150px;
+    }
+    .project-image img {
+        display: block;
     }
 }
 
@@ -365,6 +406,8 @@ button:hover {
     .intro-text h1 {
         font-size: 2em;
     }
+
+    .project-image img {
+        display: none;
+    }
 }
-
-
