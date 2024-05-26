@@ -11,25 +11,28 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 10px 20px;
+    text-align: center;
 }
 
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 nav ul li a {
@@ -53,7 +56,6 @@ nav ul li a:hover {
     align-items: center;
     padding: 50px 20px;
     text-align: center;
-    margin-top: 50px;
 }
 
 .intro-text {
@@ -62,7 +64,7 @@ nav ul li a:hover {
 }
 
 .intro-text h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
@@ -102,7 +104,6 @@ nav ul li a:hover {
     height: 30px;
     display: inline-block;
 }
-
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
@@ -147,6 +148,7 @@ nav ul li a:hover {
     width: 200px;
     height: 250px;
     flex-shrink: 0;
+    margin-top: 20px;
 }
 
 .intro-image img {
@@ -161,14 +163,14 @@ nav ul li a:hover {
 
 #projects h1{
     font-size: 2em;
-    width: 55%;
+    width: 80%;
     margin: auto;
     margin-bottom: 30px;
 }
 
 .buttons {
     margin-bottom: 20px;
-    width: 55%;
+    width: 80%;
     margin: auto;
     margin-bottom: 30px;
 }
@@ -189,7 +191,6 @@ button:hover {
 }
 
 /* Contenedor principal de los proyectos */
-
 .project-list {
     display: flex;
     flex-direction: column;
@@ -203,7 +204,7 @@ button:hover {
     padding: 20px;
     align-items: center;
     gap: 20px;
-    width: 55%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -216,7 +217,7 @@ button:hover {
 }
 
 .project-image img {
-    width: 200px;
+    display: none;
 }
 
 .project-details {
@@ -268,12 +269,12 @@ button:hover {
     padding: 40px 20px;
     border-radius: 10px;
     margin: 20px auto;
-    width: 55%;
+    width: 80%;
 }
 
 .skills-section h1{
     font-size: 2em;
-    width: 55%;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -292,12 +293,6 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     justify-content: center;
-}
-
-@media (min-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 .skill-item {
@@ -327,7 +322,7 @@ button:hover {
     padding: 40px 20px;
     border-radius: 10px;
     margin: 20px auto;
-    width: 55%;
+    width: 80%;
 }
 
 .exp-grid {
@@ -364,10 +359,23 @@ footer {
     align-items: flex-end;
 }
 
-
-
 /* Media Queries for responsiveness */
 @media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+
     .intro {
         flex-direction: row;
         text-align: left;
@@ -386,29 +394,18 @@ footer {
 
     .project-image img {
         display: block;
-    }
-}
-
-@media (max-width: 767px) {
-    header {
-        flex-direction: row;
-        text-align: center;
+        width: 200px;
     }
 
-    nav ul {
-        flex-direction: column;
+    #projects h1,
+    .buttons,
+    .project,
+    .skills-section,
+    .experience-section {
+        width: 55%;
     }
 
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-
-    .intro-text h1 {
-        font-size: 2em;
-    }
-
-    .project-image img {
-        display: none;
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
