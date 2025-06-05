@@ -276,6 +276,7 @@ button:hover {
     font-size: 2em;
     width: 100%;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .skills-container {
@@ -293,6 +294,7 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .skill-item {

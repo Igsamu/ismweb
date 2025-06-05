@@ -1,5 +1,5 @@
 
-const textos = ["Desarrollador de videojuegos", "Desarrollador Front-End"];
+const textos = ["Desarrollador de videojuegos", "Desarrollador Front-End", "Desarrollador Java"];
 let index = 0;
 let i = 0;
 let txt = "";
