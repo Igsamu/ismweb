@@ -360,7 +360,7 @@ footer {
 }
 
 /* Media Queries for responsiveness */
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -402,7 +402,7 @@ footer {
     .project,
     .skills-section,
     .experience-section {
-        width: 55%;
+        width: 65%;
     }
 
     .skills-grid {
