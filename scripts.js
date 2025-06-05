@@ -32,9 +32,9 @@ function borrar() {
 write();
 
 document.addEventListener("DOMContentLoaded", () => {
-    const gamesButton = document.getElementById("showGames");
+    const gamesButton = document.getElementById("showOthers");
     const webButton = document.getElementById("showWeb");
-    const gamesProjects = document.getElementById("gamesProjects");
+    const gamesProjects = document.getElementById("othersProjects");
     const webProjects = document.getElementById("webProjects");
 
     gamesButton.addEventListener("click", () => {
