@@ -4,18 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000040;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: rgb(249, 251, 255);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgb(255, 255, 255);
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #000040;
+            resize: none;
+        }
+
+        textarea {
+            height: 100px;
+        }
+        
+        button {
+            background-color: #353b71;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #errorModal{
+            display: none; 
+            position: fixed; 
+            top: 30%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color: #fff; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+            z-index: 999;
+        }
+        .captcha {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <form action="https://formspree.io/f/xjvowzqk" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form id="formulario" action="https://formsubmit.co/ignaciosanz@hotmail.es" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="_replyto" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Send</button>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" id="next" value="">
+
+        <div class="captcha">
+            <p>Resuelve la siguiente suma para enviar el formulario:</p>
+            <input type="text" name="captcha" placeholder="Respuesta" required>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div id="errorModal">
+        <p>❌ Respuesta incorrecta. Por favor, intenta de nuevo.</p>
+        <button onclick="document.getElementById('errorModal').style.display='none'">Cerrar</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('formulario');
+            const captchaInput = document.querySelector('input[name="captcha"]');
+            const captchaText = document.querySelector('.captcha p');
+            const nextField = document.getElementById('next');
+
+            const captchaInput1 = Math.floor(Math.random() * 10);
+            const captchaInput2 = Math.floor(Math.random() * 10);
+            const captchaResult = captchaInput1 + captchaInput2;
+
+            captchaText.textContent += ` (${captchaInput1} + ${captchaInput2})`;
+
+            form.addEventListener('submit', function (event) {
+                const userAnswer = parseInt(captchaInput.value, 10);
+
+                if (userAnswer !== captchaResult) {
+                    event.preventDefault();
+                    document.getElementById('errorModal').style.display = 'block';
+                    return false;
+                }
+
+                // Si es correcto, se permite el envío y se establece la redirección
+                nextField.value = "https://ignaciosanz.vercel.app/gracias.html";
+            });
+        });
+    </script>
 </body>
+
+
 </html>
