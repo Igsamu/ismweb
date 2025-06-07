@@ -111,15 +111,15 @@ nav ul li a:hover {
 
 .contact-link {
     display: inline-block;
-    margin: 10px;
+    margin: 8px;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 8px 8px;
     border-radius: 5px;
 }
 
 .contact-link img {
     height: 40px;
-    margin-right: 3px;
+    margin-right: 2px;
     transition: none;
 }
 
@@ -203,7 +203,7 @@ button:hover {
     padding: 20px;
     align-items: center;
     gap: 20px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
