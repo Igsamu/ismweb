@@ -31,6 +31,9 @@ function borrar() {
 
 write();
 
+othersProjects.style.display = "none";
+webProjects.style.display = "block";
+
 document.addEventListener("DOMContentLoaded", () => {
     const othersButton = document.getElementById("showOthers");
     const webButton = document.getElementById("showWeb");
