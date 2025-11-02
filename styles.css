@@ -1,3 +1,4 @@
+/* === RESET GENERAL === */
 * {
     box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ body {
     color: #ffffff;
 }
 
+/* === HEADER Y NAV === */
 header {
     display: flex;
     flex-direction: column;
@@ -48,6 +50,7 @@ nav ul li a:hover {
     color: #000000;
 }
 
+/* === INTRO === */
 .intro {
     display: flex;
     flex-direction: column;
@@ -73,14 +76,32 @@ nav ul li a:hover {
 }
 
 @keyframes wave {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    30% { transform: rotate(14deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
-    60% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
+
+    0%,
+    60%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
 }
 
 .intro-text .name {
@@ -93,9 +114,9 @@ nav ul li a:hover {
     color: #1e90ff;
 }
 
+/* === ANIMACIÓN CURSOR === */
 .texto {
     font-size: 24px;
-    font-family: Arial, sans-serif;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid;
@@ -105,22 +126,29 @@ nav ul li a:hover {
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
 }
 
+/* === CONTACTOS === */
 .contact-link {
     display: inline-block;
     margin: 8px;
     text-decoration: none;
-    padding: 8px 8px;
+    padding: 8px;
     border-radius: 5px;
 }
 
 .contact-link img {
     height: 40px;
     margin-right: 2px;
-    transition: none;
 }
 
 .contact-link:hover img {
@@ -131,14 +159,14 @@ nav ul li a:hover {
     0% {
         transform: rotate(0deg);
     }
-    50% {
-        transform: rotate(-20deg);
-    }
+
+    50%,
     100% {
         transform: rotate(-20deg);
     }
 }
 
+/* === IMAGEN PERFIL === */
 .intro-image {
     background-color: white;
     border-radius: 50%;
@@ -156,84 +184,137 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-.project-list {
-    display: none;
-}
-
-#projects h1{
-    font-size: 2em;
+/* === PROYECTOS === */
+#projects h1 {
+    font-size: 2.5em;
     width: 80%;
+    text-align: center;
     margin: auto;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.buttons {
-    margin-bottom: 20px;
+/* === CONTENEDOR GENERAL === */
+.projects-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* === PROYECTOS DESTACADOS === */
+#newProjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     width: 80%;
-    margin: auto;
-    margin-bottom: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-button {
-    font-size: 1em;
-    margin: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #121212;
-    color: white;
-    border-color: white;
-}
-
-button:hover {
-    background-color: white;
-    color: #000000;
-}
-
-/* Contenedor principal de los proyectos */
-.project-list {
+.newproject {
+    background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 12px;
+    height: 100%;
+    min-height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo de cada proyecto */
-.project {
+.newproject .project-image {
+    flex: 1;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newproject .project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.newproject:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px white;
+}
+
+/* === PROYECTOS SECUNDARIOS === */
+#webProjects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project {
     background-color: #1e1e1e;
     padding: 20px;
-    align-items: center;
-    gap: 20px;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 300px;
 }
 
 .project:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px white
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px white;
 }
 
-.project-image img {
-    display: none;
+#webProjects .project-image img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 8px;
 }
 
 .project-details {
-    flex: 1;
+    flex-grow: 1;
 }
 
 .project-details h3 {
-    font-size: 2em;
-    margin: 0;
     color: #fff;
+    font-size: 1.1em;
 }
 
 .project-details p {
-    margin: 10px 0;
     color: #ccc;
+    margin: 5px 0;
 }
 
+/* === Enlace que envuelve el proyecto === */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.project-link .project,
+.project-link .newproject {
+    cursor: pointer;
+}
+
+.project-link:hover .project,
+.project-link:hover .newproject {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px white;
+}
+
+/* === ICONOS Y LINKS === */
 .tech-icons {
     display: flex;
     gap: 10px;
@@ -241,131 +322,148 @@ button:hover {
 }
 
 .tech-icons img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-.repo-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #121212;
-    color: #fff;
-    border-color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.repo-link:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
-
+/* === SKILLS === */
 .skills-section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 40px auto;
     width: 80%;
-}
-
-.skills-section h1{
-    font-size: 2em;
-    width: 100%;
-    margin-bottom: 30px;
+    max-width: 1200px;
     text-align: center;
 }
 
-.skills-container {
-    margin: 0 auto;
+.skills-section h1 {
+    font-size: 2.3em;
+    margin-bottom: 50px;
     text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .skills-container h2 {
-    color: white;
-    margin-bottom: 20px;
+    color: #1e90ff;
+    margin: 40px 0 25px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 25px;
+    justify-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
+
+/* Cada skill en su cajita */
 .skill-item {
-    background-color: #2e2e2e;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1f1f1f;
+    padding: 18px;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}
-
-.skill-item img {
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.skill-item p {
-    color: white;
-    margin: 0;
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
 }
 
 .skill-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px white
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
-.experience-section {
-    padding: 40px 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
+/* Iconos equilibrados */
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
 }
 
-.exp-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    justify-content: center;
+/* Nombre de la habilidad */
+.skill-item p {
+    font-size: 1em;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.5px;
 }
 
-.exp-item {
-    background-color: #2e2e2e;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-}
 
-.exp-item h3 {
-    font-size: 1.3em;
-}
-
-.exp-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px white
-}
-
-.date {
-    color: #26ff00;
-}
-
+/* === FOOTER === */
 footer {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
-/* Media Queries for responsiveness */
+/* === RESPONSIVE === */
+@media (max-width: 1100px) {
+    #newProjects {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    #webProjects {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    #webProjects {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .skills-section h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 20px auto;
+        font-size: 1.8em;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        /* ❌ evita que salten de línea */
+        gap: 8px;
+        /* un poco de espacio entre ellos */
+        overflow-x: auto;
+        /* por si acaso en pantallas muy pequeñas */
+    }
+
+    .contact-link img {
+        height: 32px;
+        /* más pequeños en móvil */
+        width: auto;
+    }
+
+    .intro-image {
+        display: none;
+    }
+}
+
 @media (min-width: 760px) {
     header {
         flex-direction: row;
         justify-content: space-between;
-        text-align: left;
     }
 
     nav ul {
@@ -373,7 +471,7 @@ footer {
     }
 
     nav ul li {
-        margin-left: 20px;
+        margin-left: 15px;
         margin-bottom: 0;
     }
 
@@ -391,22 +489,5 @@ footer {
         width: 300px;
         height: 300px;
         margin-left: 150px;
-    }
-
-    .project-image img {
-        display: block;
-        width: 200px;
-    }
-
-    #projects h1,
-    .buttons,
-    .project,
-    .skills-section,
-    .experience-section {
-        width: 65%;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(4, 1fr);
     }
 }

@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Ignacio Sanz, desarrollador web y de juegos con experiencia en HTML, CSS, JavaScript, React, Unity y más.">
+    <meta name="description"
+        content="Portfolio de Ignacio Sanz, desarrollador web y de juegos con experiencia en HTML, CSS, JavaScript, React, Unity y más.">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/webp" href="medios/icono.webp">
 
     <title>Portfolio de Ignacio Sanz – Desarrollador Web</title>
 
-    
-    <meta name="description" content="Desarrollador web especializado en React, Java y diseño front-end. Conoce mis proyectos y contacta conmigo fácilmente.">
-    
+
+    <meta name="description"
+        content="Desarrollador web especializado en React, Java y diseño front-end. Conoce mis proyectos y contacta conmigo fácilmente.">
+
     <meta name="keywords" content="desarrollador web, React, Java, portfolio, web, Ignacio Sanz Muñoz, Ignacio, 
     Ignacio Sanz, proyectos web, HTML, CSS, JavaScript, frontend, backend, programación, desarrollo de software,
     Unity, videojuegos, diseño web, desarrollo web, portfolio de desarrollador, contacto profesional">
-    
+
     <meta name="author" content="Ignacio Sanz" />
 
     <meta name="google-site-verification" content="GOOG_TOKEN" />
@@ -32,13 +34,6 @@
 <body>
     <header>
         <div class="logo">Ignacio Sanz</div>
-        <nav>
-            <ul>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section class="intro">
@@ -46,8 +41,6 @@
             <h1>¡Hola! <span class="wave">👋</span> me llamo,
                 <br><span class="name">Ignacio Sanz</span>
             </h1>
-
-            <div class="texto"></div>
 
             <div class="contact">
                 <a href="https://www.linkedin.com/in/ignaciosanzm/" class="contact-link" target="_blank">
@@ -68,99 +61,113 @@
 
     <section id="projects">
         <h1>Proyectos</h1>
-        <div class="buttons">
-            <button id="showWeb">Web</button>
-            <button id="showOthers">Otros</button>
-        </div>        
 
-        <div id="webProjects" class="project-list">            
-            <div class="project">
-                <div class="project-details">
-                    <h3>Normas Internacionales de Auditoría</h3>
-                    <p>Maquitación del documento de las normas internacionales de auditoría</p>
-                    <p>Página oficial del instituto de contabilidad y auditoría de cuentas</p>
-                    <p>Ministerio de economía, comercio y empresa</p>
-                    <div class="tech-icons">
-                        <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
-                        <img src="medios/HTML.webp" alt="Html" title="Html">
-                        <img src="medios/CSS.webp" alt="Css" title="Css">
+        <div class="projects-grid">
+            <!-- Proyectos destacados -->
+            <div id="newProjects" class="project-list">
+                <a href="https://calculator-game-henna.vercel.app/" target="_blank" class="repo-link">
+                    <div class="newproject">
+                        <div class="project-details">
+                            <h3>Juego de calculadora</h3>
+                            <p>Juego de descubrir datos con una calculadora</p>
+                            <div class="tech-icons">
+                                <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
+                                <img src="medios/HTML.webp" alt="Html" title="Html">
+                                <img src="medios/CSS.webp" alt="Css" title="Css">
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="medios/calculatorGame.webp" alt="calculatorGame">
+                        </div>
                     </div>
-                    <a href="https://www.icac.gob.es/sites/default/files/2024-05/240517%20Final.html" target="_blank" class="repo-link">
-                        ¡Pruébalo! →</a>
+                </a>
+
+                <div class="newproject">
+                    <a href="https://grad-generator.vercel.app/" target="_blank" class="repo-link">
+                        <div class="project-details">
+                            <h3>Generador de gradientes</h3>
+                            <p>Generador simple de gradientes con 4 opciones y autogenerador</p>
+                            <div class="tech-icons">
+                                <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
+                                <img src="medios/HTML.webp" alt="Html" title="Html">
+                                <img src="medios/CSS.webp" alt="Css" title="Css">
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="medios/gradGen.webp" alt="GradGen">
+                        </div>
                 </div>
-                <div class="project-image">
-                    <img src="medios/nias.webp" alt="Shortener-links">
-                </div>
+                </a>
             </div>
 
-            <div class="project">
-                <div class="project-details">
-                    <h3>Acortador de Links</h3>
-                    <p>Acortador de links</p>
-                    <p>Usando la API de Bitly</p>
-                    <div class="tech-icons">
-                        <img src="medios/React.webp" alt="React" title="React">
-                        <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
-                        <img src="medios/HTML.webp" alt="Html" title="Html">
-                        <img src="medios/CSS.webp" alt="Css" title="Css">
+            <!-- Proyectos secundarios -->
+            <div id="webProjects" class="project-list">
+                <a href="https://www.icac.gob.es/sites/default/files/2024-05/240517%20Final.html" target="_blank"
+                    class="repo-link">
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Normas Internacionales de Auditoría</h3>
+                            <div class="tech-icons">
+                                <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
+                                <img src="medios/HTML.webp" alt="Html" title="Html">
+                                <img src="medios/CSS.webp" alt="Css" title="Css">
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="medios/nias.webp" alt="NIAS">
+                        </div>
                     </div>
-                    <a href="https://shortener-links-mauve.vercel.app/" target="_blank" class="repo-link">
-                        ¡Pruébalo! →</a>
-                </div>
-                <div class="project-image">
-                    <img src="medios/Shortener-links.webp" alt="Shortener-links">
-                </div>
-            </div>
+                </a>
 
-            <div class="project">
-                <div class="project-details">
-                    <h3>Typing Game</h3>
-                    <p>¿Qué tan rápido puedes escribir?</p>
-                    <p>Pruébate a ti mismo</p>
-                    <div class="tech-icons">
-                        <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
-                        <img src="medios/HTML.webp" alt="Html" title="Html">
-                        <img src="medios/CSS.webp" alt="Css" title="Css">
+                <a href="https://shortener-links-mauve.vercel.app/" target="_blank" class="repo-link">
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Acortador de Links</h3>
+                            <p>Usando la API de Bitly</p>
+                            <div class="tech-icons">
+                                <img src="medios/React.webp" alt="React" title="React">
+                                <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="medios/Shortener-links.webp" alt="Shortener-links">
+                        </div>
                     </div>
-                    <a href="https://type-game-liart.vercel.app/" target="_blank" class="repo-link">
-                        ¡Pruébalo! →</a>
-                </div>
-                <div class="project-image">
-                    <img src="medios/typing-game.webp" alt="Shortener-links">
-                </div>
-            </div>
+                </a>
 
-            <div class="project">
-                <div class="project-details">
-                    <h3>Buscador de Pokémon</h3>
-                    <p>Buscador de pokémon por número o por nombre.</p>
-                    <p>Usando la afamada PokéAPI.</p>
-                    <div class="tech-icons">
-                        <img src="medios/React.webp" alt="React" title="React">
-                        <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
-                        <img src="medios/HTML.webp" alt="Html" title="Html">
-                        <img src="medios/CSS.webp" alt="Css" title="Css">
+                <a href="https://type-game-liart.vercel.app/" target="_blank" class="repo-link">
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Typing Game</h3>
+                            <p>¿Qué tan rápido puedes escribir?</p>
+                            <div class="tech-icons">
+                                <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="medios/typing-game.webp" alt="Typing Game">
+                        </div>
                     </div>
-                    <a href="https://poke-app-plum.vercel.app/" target="_blank" class="repo-link">
-                        ¡Pruébalo! →</a>
-                </div>
-                <div class="project-image">
-                    <img src="medios/Pokeball.webp" alt="Pokeball">
-                </div>
-            </div>
+                </a>
 
+                <a href="https://poke-app-plum.vercel.app/" target="_blank" class="repo-link">
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Buscador de Pokémon</h3>
+                            <p>Usando la PokéAPI.</p>
+                            <div class="tech-icons">
+                                <img src="medios/React.webp" alt="React" title="React">
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="medios/Pokeball.webp" alt="Pokeball">
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
-    <section id="others">        
-        <div id="othersProjects" class="project-list">            
-            <div class="project">
-                <div class="project-details">
-                    <p>Esta sección está en construcción</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="skills" class="skills-section">
         <h1>Habilidades Técnicas</h1>
@@ -183,6 +190,18 @@
                     <p>JavaScript</p>
                 </div>
                 <div class="skill-item">
+                    <img src="medios/Java.webp" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img src="medios/php.webp" alt="PhP">
+                    <p>php</p>
+                </div>
+                <div class="skill-item">
+                    <img src="medios/sql.webp" alt="sql">
+                    <p>SQL</p>
+                </div>
+                <div class="skill-item">
                     <img src="medios/React.webp" alt="React">
                     <p>React</p>
                 </div>
@@ -191,13 +210,14 @@
                     <p>C#</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/Java.webp" alt="Java">
-                    <p>Java</p>
+                    <img src="medios/bootstrap.webp" alt="bootstrap">
+                    <p>Bootstrap</p>
                 </div>
-                <div class="skill-item">
-                    <img src="medios/sql.webp" alt="sql">
-                    <p>SQL</p>
-                </div>
+            </div>
+            
+            <h2>Otras capacidades</h2>
+            
+            <div class="skills-grid">
                 <div class="skill-item">
                     <img src="medios/NetBeans.webp" alt="NetBeans">
                     <p>NetBeans</p>
@@ -210,15 +230,6 @@
                     <img src="medios/Unity.webp" alt="Unity">
                     <p>Unity</p>
                 </div>
-            </div>
-
-            <h2>Otras capacidades</h2>
-
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="medios/bootstrap.webp" alt="bootstrap">
-                    <p>Bootstrap</p>
-                </div>                
                 <div class="skill-item">
                     <img src="medios/Photoshop.webp" alt="Phtoshop">
                     <p>Photoshop</p>
@@ -228,14 +239,11 @@
                     <p>Premiere</p>
                 </div>
             </div>
-
-            <h2>Aprendiendo</h2>
-
             <div class="skills-grid">
-                
+
             </div>
         </div>
-    </section>  
+    </section>
 
     <footer>
         <div class="contact">
