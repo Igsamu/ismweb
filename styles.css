@@ -1,6 +1,7 @@
 /* === RESET GENERAL === */
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -204,6 +205,11 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.projects-grid a {
+    text-decoration: none;
+}
+
+
 /* === PROYECTOS DESTACADOS === */
 #newProjects {
     display: grid;
@@ -288,6 +294,7 @@ nav ul li a:hover {
 .project-details h3 {
     color: #fff;
     font-size: 1.1em;
+
 }
 
 .project-details p {
