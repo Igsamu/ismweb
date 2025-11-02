@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #050213;
     color: #ffffff;
 }
 
@@ -24,31 +24,6 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 30px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-bottom: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #ffffff;
-    color: #000000;
 }
 
 /* === INTRO === */
@@ -115,29 +90,6 @@ nav ul li a:hover {
     color: #1e90ff;
 }
 
-/* === ANIMACIÓN CURSOR === */
-.texto {
-    font-size: 24px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid;
-    animation: blink-caret .75s step-end infinite;
-    height: 30px;
-    display: inline-block;
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: black;
-    }
-}
-
 /* === CONTACTOS === */
 .contact-link {
     display: inline-block;
@@ -169,13 +121,9 @@ nav ul li a:hover {
 
 /* === IMAGEN PERFIL === */
 .intro-image {
-    background-color: white;
+    background-color: rgb(186, 186, 186);
     border-radius: 50%;
-    box-shadow: 0 0 15px 35px rgba(255, 255, 255, 0.5);
     overflow: hidden;
-    width: 200px;
-    height: 250px;
-    flex-shrink: 0;
     margin-top: 20px;
 }
 
@@ -221,7 +169,7 @@ nav ul li a:hover {
 }
 
 .newproject {
-    background-color: #1e1e1e;
+    background-color: #1d1528;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -263,7 +211,7 @@ nav ul li a:hover {
 }
 
 .project {
-    background-color: #1e1e1e;
+    background-color: #1d1528;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -342,7 +290,7 @@ nav ul li a:hover {
     border-radius: 10px;
     margin: 40px auto;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -356,7 +304,7 @@ nav ul li a:hover {
 }
 
 .skills-container h2 {
-    color: #1e90ff;
+    color: #a070ff;
     margin: 40px 0 25px;
     font-size: 1.6em;
     text-transform: uppercase;
@@ -375,7 +323,7 @@ nav ul li a:hover {
 
 /* Cada skill en su cajita */
 .skill-item {
-    background-color: #1f1f1f;
+    background-color: #1d1528;
     padding: 18px;
     border-radius: 12px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -400,7 +348,7 @@ nav ul li a:hover {
     height: 60px;
     object-fit: contain;
     margin-bottom: 10px;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+    filter: drop-shadow(0 0 5px rgb(121, 112, 145));
 }
 
 /* Nombre de la habilidad */
