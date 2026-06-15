@@ -4,36 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio de Ignacio Sanz, desarrollador web y de juegos con experiencia en HTML, CSS, JavaScript, React, Unity y más.">
+    <title>Ignacio Sanz – Frontend Developer & QA Engineer</title>
+
+    <meta name="description" content="Portfolio de Ignacio Sanz, desarrollador Frontend especializado en Angular, QA y el diseño de agentes de IA. Conoce mis proyectos de desarrollo inteligente.">
+    <meta name="keywords" content="desarrollador web, Angular, QA, Agentes de IA, Prompt Engineering, React, portfolio, Ignacio Sanz Muñoz, frontend, automatización, testing">
+    <meta name="author" content="Ignacio Sanz" />
+
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/webp" href="medios/icono.webp">
 
-    <title>Portfolio de Ignacio Sanz – Desarrollador Web</title>
-
-
-    <meta name="description"
-        content="Desarrollador web especializado en React, Java y diseño front-end. Conoce mis proyectos y contacta conmigo fácilmente.">
-
-    <meta name="keywords" content="desarrollador web, React, Java, portfolio, web, Ignacio Sanz Muñoz, Ignacio, 
-    Ignacio Sanz, proyectos web, HTML, CSS, JavaScript, frontend, backend, programación, desarrollo de software,
-    Unity, videojuegos, diseño web, desarrollo web, portfolio de desarrollador, contacto profesional">
-
-    <meta name="author" content="Ignacio Sanz" />
-
     <meta name="google-site-verification" content="GOOG_TOKEN" />
 
-    <meta property="og:title" content="Ignacio Sanz – Portfolio Web" />
-    <meta property="og:description" content="Portfolio de desarrollador web con proyectos en React, Java y más." />
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Ignacio Sanz – Portfolio Web Inteligente" />
+    <meta property="og:description" content="Desarrollador Frontend (Angular) y QA especializado en la integración de Agentes de IA." />
     <meta property="og:image" content="https://ignaciosanz.vercel.app/preview.jpg" />
     <meta property="og:url" content="https://ignaciosanz.vercel.app/" />
     <meta property="og:type" content="website" />
-
 </head>
 
 <body>
     <header>
-        <div class="logo">Ignacio Sanz</div>
+        <div class="logo">&lt;IgnacioSanz /&gt;</div>
     </header>
 
     <section class="intro">
@@ -41,35 +33,65 @@
             <h1>¡Hola! <span class="wave">👋</span> me llamo,
                 <br><span class="name">Ignacio Sanz</span>
             </h1>
+            <p class="tagline">
+                Desarrollador Frontend en Angular y QA con formación en DAW, especializado en el desarrollo de software mediante el diseño e integración de agentes de IA.
+                Enfocado en la automatización inteligente y creación de interfaces de alta eficiencia.
+            </p>
 
             <div class="contact">
                 <a href="https://www.linkedin.com/in/ignaciosanzm/" class="contact-link" target="_blank">
-                    <img src="medios/linkedinblue.webp" alt="LinkedIn"></a>
+                    <img src="medios/linkedinblue.webp" alt="LinkedIn">
+                </a>
                 <a href="https://github.com/igsamu" class="contact-link" target="_blank">
-                    <img src="medios/github-logoblue.webp" alt="GitHub"></a>
-                <a href="crorreo.html" target="_blank" class="contact-link">
-                    <img src="medios/mailSend.webp" alt="Email"></a>
-                <a href="medios/CV_IgnacioSanz_2025.pdf" target="_blank" class="contact-link">
-                    <img src="medios/CVBlue.webp" alt="Cv"></a>
+                    <img src="medios/github-logoblue.webp" alt="GitHub">
+                </a>
+                <a href="mailto:ignaciosanz@hotmail.es" class="contact-link">
+                    <img src="medios/mailSend.webp" alt="Email">
+                </a>
+                <a href="medios/CV_IgnacioSanz_2026.pdf" target="_blank" class="contact-link">
+                    <img src="medios/CVBlue.webp" alt="Cv">
+                </a>
             </div>
         </div>
 
         <div class="intro-image">
-            <img src="medios/Foto.webp" alt="Foto">
+            <img src="medios/Foto.webp" alt="Foto Ignacio Sanz">
         </div>
     </section>
 
     <section id="projects">
-        <h1>Proyectos</h1>
+        <h2>Proyectos Destacados</h2>
 
         <div class="projects-grid">
-            <!-- Proyectos destacados -->
             <div id="newProjects" class="project-list">
+                
+                <a href="https://news-social-media-c2jn.vercel.app/login" target="_blank" class="repo-link">
+                    <div class="newproject featured-ai">
+                        <div class="project-details">
+                            <span class="badge">Nuevo • IA</span>
+                            <h3>Trenx</h3>
+                            <p>Plataforma interactiva de noticias y red social con autenticación segura, feeds dinámicos optimizados y asistentes inteligentes integrados. Aún en desarrollo.</p>
+                            <div class="tech-icons">
+                                <img src="medios/Angular.png" alt="Angular" title="Angular">
+                                <img src="medios/Express.svg" alt="Express" title="Express">
+                                <img src="medios/TypeScript.png" alt="TypeScript" title="TypeScript">
+                                <img src="medios/JavaScript.webp" alt="JavaScript" title="TypeScript/JavaScript">
+                                <img src="medios/HTML.webp" alt="Html" title="Html">
+                                <img src="medios/CSS.webp" alt="Css" title="Css">
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="medios/trenx.png" alt="trenx" onerror="this.src='medios/trenx.png'">
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Juego de calculadora -->
                 <a href="https://calculator-game-henna.vercel.app/" target="_blank" class="repo-link">
                     <div class="newproject">
                         <div class="project-details">
                             <h3>Juego de calculadora</h3>
-                            <p>Juego de descubrir datos con una calculadora</p>
+                            <p>Experiencia interactiva lúdica orientada al descubrimiento de datos numéricos y lógicos a través de una interfaz limpia de calculadora.</p>
                             <div class="tech-icons">
                                 <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
                                 <img src="medios/HTML.webp" alt="Html" title="Html">
@@ -81,40 +103,22 @@
                         </div>
                     </div>
                 </a>
-
-                <div class="newproject">
-                    <a href="https://grad-generator.vercel.app/" target="_blank" class="repo-link">
-                        <div class="project-details">
-                            <h3>Generador de gradientes</h3>
-                            <p>Generador simple de gradientes con 4 opciones y autogenerador</p>
-                            <div class="tech-icons">
-                                <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
-                                <img src="medios/HTML.webp" alt="Html" title="Html">
-                                <img src="medios/CSS.webp" alt="Css" title="Css">
-                            </div>
-                        </div>
-                        <div class="project-image">
-                            <img src="medios/gradGen.webp" alt="GradGen">
-                        </div>
-                </div>
-                </a>
             </div>
+
+            <h2>Otros Proyectos de Desarrollo</h2>
 
             <!-- Proyectos secundarios -->
             <div id="webProjects" class="project-list">
-                <a href="https://www.icac.gob.es/sites/default/files/2024-05/240517%20Final.html" target="_blank"
-                    class="repo-link">
+                
+                <a href="https://grad-generator.vercel.app/" target="_blank" class="repo-link">
                     <div class="project">
                         <div class="project-details">
-                            <h3>Normas Internacionales de Auditoría</h3>
+                            <h3>Generador de Gradientes</h3>
+                            <p>Herramienta frontend ágil con autogeneración aleatoria y 4 variantes de estilos CSS.</p>
                             <div class="tech-icons">
                                 <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
                                 <img src="medios/HTML.webp" alt="Html" title="Html">
-                                <img src="medios/CSS.webp" alt="Css" title="Css">
                             </div>
-                        </div>
-                        <div class="project-image">
-                            <img src="medios/nias.webp" alt="NIAS">
                         </div>
                     </div>
                 </a>
@@ -123,14 +127,11 @@
                     <div class="project">
                         <div class="project-details">
                             <h3>Acortador de Links</h3>
-                            <p>Usando la API de Bitly</p>
+                            <p>Aplicación conectada a la API de Bitly para la gestión y reducción eficiente de URLs.</p>
                             <div class="tech-icons">
                                 <img src="medios/React.webp" alt="React" title="React">
                                 <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
                             </div>
-                        </div>
-                        <div class="project-image">
-                            <img src="medios/Shortener-links.webp" alt="Shortener-links">
                         </div>
                     </div>
                 </a>
@@ -139,15 +140,11 @@
                     <div class="project">
                         <div class="project-details">
                             <h3>Typing Game</h3>
-                            <p>¿Qué tan rápido puedes escribir?</p>
+                            <p>Test de velocidad y precisión de escritura con renderizado dinámico de métricas.</p>
                             <div class="tech-icons">
                                 <img src="medios/JavaScript.webp" alt="JavaScript" title="JavaScript">
                                 <img src="medios/HTML.webp" alt="Html" title="Html">
-                                <img src="medios/CSS.webp" alt="Css" title="Css">
                             </div>
-                        </div>
-                        <div class="project-image">
-                            <img src="medios/typing-game.webp" alt="Typing Game">
                         </div>
                     </div>
                 </a>
@@ -156,13 +153,10 @@
                     <div class="project">
                         <div class="project-details">
                             <h3>Buscador de Pokémon</h3>
-                            <p>Usando la PokéAPI.</p>
+                            <p>Cliente SPA construido sobre React que consume la API REST pública de PokéAPI.</p>
                             <div class="tech-icons">
                                 <img src="medios/React.webp" alt="React" title="React">
                             </div>
-                        </div>
-                        <div class="project-image">
-                            <img src="medios/Pokeball.webp" alt="Pokeball">
                         </div>
                     </div>
                 </a>
@@ -170,22 +164,27 @@
         </div>
     </section>
 
-
     <section id="skills" class="skills-section">
         <h1>Habilidades Técnicas</h1>
 
         <div class="skills-container">
-
-            <h2>Trabajo con</h2>
-
+            <h2>Core Stack</h2>
             <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="medios/HTML.webp" alt="Html">
-                    <p>Html</p>
+                <div class="skill-item ai-highlight">
+                    <img src="medios/AI.png" alt="Agentes de IA" onerror="this.src='medios/ai.png'">
+                    <p>Agentes de IA / Prompting</p>
+                </div>
+                <div class="skill-item frontend-highlight">
+                    <img src="medios/Angular.png" alt="Angular" onerror="this.src='medios/angular.png'">
+                    <p>Angular</p>
+                </div>
+                <div class="skill-item frontend-highlight">
+                    <img src="medios/Express.svg" alt="Express" onerror="this.src='medios/Express.svg'">
+                    <p>Express.js</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/CSS.webp" alt="Css">
-                    <p>Css</p>
+                    <img src="medios/React.webp" alt="React">
+                    <p>React</p>
                 </div>
                 <div class="skill-item">
                     <img src="medios/JavaScript.webp" alt="JavaScript">
@@ -196,67 +195,60 @@
                     <p>Java</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/php.webp" alt="PhP">
-                    <p>php</p>
-                </div>
-                <div class="skill-item">
-                    <img src="medios/sql.webp" alt="sql">
+                    <img src="medios/sql.webp" alt="SQL">
                     <p>SQL</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/React.webp" alt="React">
-                    <p>React</p>
+                    <img src="medios/MySql.PNG" alt="MySql">
+                    <p>MySql</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/csharp.webp" alt="Csharp">
-                    <p>C#</p>
+                    <img src="medios/HTML.webp" alt="HTML5">
+                    <p>HTML5</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/bootstrap.webp" alt="bootstrap">
-                    <p>Bootstrap</p>
+                    <img src="medios/CSS.webp" alt="CSS3">
+                    <p>CSS3</p>
                 </div>
             </div>
 
-            <h2>Otras capacidades</h2>
-
+            <h2>Otros</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <img src="medios/NetBeans.webp" alt="NetBeans">
-                    <p>NetBeans</p>
-                </div>
-                <div class="skill-item">
-                    <img src="medios/SQL_Developer.webp" alt="SqlDev">
-                    <p>SQL Developer</p>
+                    <img src="medios/qa-testing.webp" alt="QA Automation" onerror="this.src='medios/NetBeans.webp'">
+                    <p>QA / Software Testing</p>
                 </div>
                 <div class="skill-item">
                     <img src="medios/Unity.webp" alt="Unity">
-                    <p>Unity</p>
+                    <p>Unity (C#)</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/Photoshop.webp" alt="Phtoshop">
-                    <p>Photoshop</p>
+                    <img src="medios/php.webp" alt="PHP">
+                    <p>PHP</p>
                 </div>
                 <div class="skill-item">
-                    <img src="medios/premiere.webp" alt="premiere">
-                    <p>Premiere</p>
+                    <img src="medios/bootstrap.webp" alt="Bootstrap">
+                    <p>Bootstrap</p>
                 </div>
-            </div>
-            <div class="skills-grid">
-
             </div>
         </div>
     </section>
 
     <footer>
+        <p>© 2026 Ignacio Sanz Muñoz. Desarrollado con optimización asistida por IA.</p>
         <div class="contact">
             <a href="https://www.linkedin.com/in/ignaciosanzm/" class="contact-link" target="_blank">
-                <img src="medios/linkedinblue.webp" alt="LinkedIn"></a>
+                <img src="medios/linkedinblue.webp" alt="LinkedIn">
+            </a>
             <a href="https://github.com/igsamu" class="contact-link" target="_blank">
-                <img src="medios/github-logoblue.webp" alt="GitHub"></a>
-            <a href="crorreo.html" target="_blank" class="contact-link">
-                <img src="medios/mailSend.webp" alt="Email"></a>
-            <a href="medios/CV_IgnacioSanz_2024.pdf" target="_blank" class="contact-link">
-                <img src="medios/CVBlue.webp" alt="Cv"></a>
+                <img src="medios/github-logoblue.webp" alt="GitHub">
+            </a>
+            <a href="mailto:ignaciosanz@hotmail.es" class="contact-link">
+                <img src="medios/mailSend.webp" alt="Email">
+            </a>
+            <a href="medios/CV_IgnacioSanz_2026.pdf" target="_blank" class="contact-link">
+                <img src="medios/CVBlue.webp" alt="Cv">
+            </a>
         </div>
     </footer>
 
